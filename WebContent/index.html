@@ -74,7 +74,7 @@
 
 	// bind the List items to the data collection
 	list.bindItems({
-		path : "/d",
+		path : "/d/results",
 		sorter : new sap.ui.model.Sorter("SubmittedDate"),
 		template : new sap.m.StandardListItem({
 			title: "{CustomerName}",
@@ -98,7 +98,7 @@
 			
 			
 				oTable.bindAggregation("items", {
-    			path: oBindingContext.sPath+"/ZSORDERDETAILSSet01/results",
+    			path: oBindingContext.sPath+"/ZSORDERDETAILSNEWSet/results",
     			template: cells, 
 				});
 		
